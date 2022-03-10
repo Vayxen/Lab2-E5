@@ -1,0 +1,98 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[margin=1in]{geometry} % manage page dimensions
+\usepackage[utf8]{inputenc} % utf-8 encoding
+\usepackage[italian]{babel} % italian default text
+\usepackage[hidelinks]{hyperref} % link references
+\usepackage{bookmark} %libro marco 
+\usepackage{import} % import other .tex files
+\usepackage{amsmath} % math commands
+\usepackage{amssymb} % math symbols
+\usepackage{amsthm} % math environments
+\usepackage{amsmath} % equation align
+\usepackage{siunitx} % SI unit
+\usepackage{booktabs} % tabular enhance
+\usepackage{multirow} % dynamic tabular cell dimensions
+\usepackage{longtable} % multi-page table
+\usepackage[labelfont=bf, skip=.5em, font=small]{caption} % beautiful caption
+\usepackage{subcaption} % subfigure
+\usepackage{graphicx} % import graphics
+\usepackage{fancyhdr} % custom page header and footer
+
+\graphicspath{{../assets/}{../graphs/}} % base graphics path
+
+\setlength{\parskip}{1em} % distance between paragraphs
+\setlength{\parindent}{0em} % indentation at beginning of paragraph
+
+\numberwithin{equation}{section} % equation tag relative to section
+
+\title{Esperienza di elettromagnetismo - Esperimento di Faraday}
+\author{Antonio Riolo, Matteo Romano, Vittorio Strano, Florinda Tesi, Arianna Genuardi}
+\date{09/03/2022} %o metto la data della prima parte dell'esperienza?
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\rule{\textwidth}{1px}
+
+\newpage
+
+    \section{Obiettivo dell'esperienza}
+
+    L'obiettivo dell'esperienza è studiare l'intensità della forza di Lorentz $F_{L} = IlB \sin \theta$, ponendola ogni volta in funzione di una delle variabili e fissando le altre (eccetto $B$, che mantiene lo stesso valore per tutti e 3 i casi in esame).
+    %todo: specificare qui il valore di B una volta calcolato dall'analisi dei dati, così possiamo accorciare questa parentesi
+
+    \section{Strumentazione e accorgimenti adottati} %? review
+
+    \begin{itemize}
+        \item Circuiti stampati
+        \item Bilancia ($\delta =$) %! da discutere
+        \item Magneti 
+        \item Generatore di corrente ($\delta = 2\% \; \text{f.s.}$) %va bene come notazione?
+        \item Amperometro analogico
+        \item Stand %inserisci la simpatica reference
+        %\item %qui tecnicamente andrebbe la "main unit" dove si attacca il circuito stampato ma non so se chiamarla unità principale oppure ha un nome più sensato
+    \end{itemize}
+
+    %todo: parlare della taratura eseguita
+
+    \subsection{Costruzione del circuito}
+
+    % \begin{figure} %forse andrebbe centrato(?)
+    %     \includegraphics{filename}
+    %     \label{fig:circuito}
+    % \end{figure}
+
+    \section{Analisi dei dati}
+    
+    \subsection{Parte 1 - $F_{L}$ in funzione di $I$}
+
+    Per la prima parte dell'esperimento, è stata misurata la variazione di massa dei magneti al variare dell'intensità di corrente. Poichè la corrente massima sopportata dall'unità principale è di $5\text{A}$, onde evitare possibili danni al circuito, si è scelto di variare $I$ tra $0\text{A}$ e $4.5\text{A}$, procedendo ad incrementi di $0.5\text{A}$. Il circuito qui utilizzato ha lunghezza $l = (8.2 \pm 0.2)cm$.
+
+    %grafico
+
+    %commento sul grafico
+
+    \subsection{Parte 2 - $F_{L}$ in funzione di $l$}
+
+    Fissato $I = (?)A$, sono stati utilizzati sei circuiti stampati di lunghezza variabile %la lunghezza diciamo che è specificata nelle ascisse dell'eventuale grafico?
+
+    %sezione grafico
+
+    %commento sul grafico
+    %*quanto alla massa dei magneti, proporrei di non metterla subito all'inizio della sezione o specificato negli strumenti, ma subito prima di mostrare ciascun set di misure, del tipo "in questo set di misure, la massa dei magneti misurata a corrente nulla è x"
+
+    \subsection{Parte 3 - $F_{L}$ in funzione di $\theta$}
+
+    In quest'ultima parte di esperimento, è stato fatto variare l'angolo $\theta$ per mezzo di %un cosino per cui eventualmente ci sarà una spiegazione migliore
+
+    %grafico
+
+    %commento sul grafico
+
+    \section{Conclusioni}
+
+\end{document}
