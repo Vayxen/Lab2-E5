@@ -14,15 +14,304 @@
 \usepackage{tabularx, booktabs, multirow, longtable} % table enhance
 \usepackage{caption, subcaption, graphicx, float} % figure enhance
 
+<<<<<<< HEAD
 \title{\textbf{Esperienza di Elettromagnetismo}\vspace{.5em}\\ \large Verifica sperimentale della forza di Lorentz.}
 \author{\textbf{Componenti}\vspace{.5em}\\ \large Vittorio Strano, Arianna Genuardi, Florinda Tesi,\\ Antonio Riolo, Matteo Romano}
 \date{}
+=======
+\usepackage{a4wide}
+\usepackage{amsmath}
+\usepackage[greek, british]{babel}
+\usepackage{fancyhdr}
+\usepackage{gensymb}
+\usepackage{graphicx,wrapfig}
+\usepackage{grffile}
+\usepackage{pifont}
+\usepackage{float}
+
+\usepackage{caption}
+\captionsetup{format=plain, labelfont=bf, skip=0pt}
+
+\usepackage{paralist}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{moreverb}
+\usepackage{lscape}
+%\usepackage[nottoc]{tocbibind}
+\usepackage{verbatim}
+\usepackage{datetime}
+\usepackage{array}
+
+\usepackage{color}
+\definecolor{darkred}{rgb}{0.5,0,0}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{darkblue}{rgb}{0,0,0.5}
+\definecolor{gray}{rgb}{0.35,0.35,0.35}
+
+\usepackage[pagebackref=true,
+            colorlinks=black,
+            linkcolor=gray,
+            bookmarks=true,
+            filecolor=gray,
+            urlcolor=gray,
+            citecolor=gray
+           ]{hyperref}
+
+%\usepackage{titlesec}
+
+
+
+
+%\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage{chngcntr}
+\counterwithout{section}{chapter}
+
+\usepackage{tocloft}
+
+
+
+
+
+
+\usepackage{inputenc}
+\usepackage{tikz}
+\usepackage{anysize}
+\usepackage{color} 
+\marginsize{1.5cm}{1cm}{1cm}{2cm}
+\usepackage[siunitx,european,americanresistors]{circuitikz}
+\definecolor{logo}{HTML}{158388}
+\definecolor{logo2}{HTML}{FFFFFF}
+\definecolor{scritta}{HTML}{000000}
+
+\def\sectionfont{\bfseries\LARGE}
+\def\subsectionfont{\bfseries\Large}
+
+%\renewcommand\cftsectionaftersnumb{\textbf}
+\renewcommand{\cftsectionfont}{\normalfont\bfseries}% titles in bold
+
+
+
+
+
+
+
+\usepackage{lipsum}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\setlength\cftsectionindent{0pt}
+\setlength\cftsubsectionindent{15pt}
+\setlength\cftsectionnumwidth{2em}
+\setlength\cftsubsectionnumwidth{4em}
+
+\renewcommand\cftbeforesectionskip{7pt plus 1pt}
+\renewcommand\cftbeforesubsectionskip{4pt plus 1pt}
+
+
+
+
+
+
+
+%\renewcommand\cftsecfont{\Large\bfseries}
+%\renewcommand\cftsubsecfont{\large\bfseries}
+
+%\renewcommand\cftsecpagefont{\large\bfseries}
+%\renewcommand\cftsubsecpagefont{\large\bfseries}
+
+%\renewcommand\cftsecafterpnum{\par\addvspace{15pt}}
+%  \renewcommand\cftsubsecafterpnum{\par\addvspace{15pt}}
+
+
+
+\usepackage{lineno}
+\usepackage{longtable}
+\usepackage[section]{placeins}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{hyperref}
+\usepackage{subfig}
+
+\usepackage{booktabs}
+\usepackage{rotating}
+\usepackage[absolute]{textpos}
+
+\usepackage{listings}
+
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.1in}
+\setlength{\marginparwidth}{2.3cm}
+
+\newcommand\todo[1]{
+  \-\marginpar[\raggedleft\footnotesize #1]
+  {
+    \raggedright\footnotesize #1
+  }
+}
+
+\newcommand\ltodo[1]{
+  \-\marginpar[\raggedleft\footnotesize ]
+  {
+    \raggedright\footnotesize
+  }
+}
+
+%\docdate
+%\newcommand{\docdate}{\today}
+
+%\newcommand{\clearemptydoublepage}{
+%    \newpage{\pagestyle{empty}
+%    \cleardoublepage}
+%}
+
+\fancypagestyle{plain}{
+\fancyhf{}
+\fancyfoot[LO,RE]{\doctitle}
+\fancyfoot[RO, LE]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}}
+
+\pagestyle{plain}
+
+\modulolinenumbers[5]
+
+\newcommand{\tick}{\textcolor{darkgreen}{\ding{51}}}
+\newcommand{\cross}{\textcolor{darkred}{\ding{55}}}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{Listings}
+
+
+\addto\captionsbritish{\renewcommand{\contentsname}{Indice}}
+
+%\linenumbers
+
+\newcommand{\researchgroup}{LABORATORIO DI FISICA I}
+
+\newcommand{\doctitle}{Laboratorio di Fisica - Esperienza di Elettromagnetismo}
+>>>>>>> parent of 891a273 (versione possibilmente finale del doc)
+
+
+
+
+
+
+
+
+
+
+
+
 
 \begin{document}
+<<<<<<< HEAD
+=======
+% SECTIONS
+\makeatletter
+\setsecheadstyle{\tikz{
+\fill[logo](1,-1.85) rectangle (14,-2);
+\node[inner sep=0pt,outer sep=0pt,text=white,scale=1.5,font=\sectionfont]  at (.5,-1.35) {\color{scritta}\Large\thesection};
+
+    
+}\vskip-9ex\hskip5em\sectionfont\color{scritta}}
+% SUBSECTIONS
+\setsubsecheadstyle{\tikz{
+\fill[logo](1.5,-3.90) rectangle (8,-4);
+\node[inner sep=0pt,outer sep=0pt,text=logo,scale=1,font=\sectionfont]  at (.5,-3.43)  {\color{scritta}\quad\thesubsection};
+\node[inner sep=0pt,outer sep=0pt,text=logo2,scale=1,font=\sectionfont]  at (1.6,-3.5){$\gg$};
+}\vskip-8ex\hskip5em\subsectionfont\color{scritta}
+}
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{2}% to number subsubsections
+
+\def\@seccntformat#1{\hskip0em}
+\makeatother
+
+\setbeforesecskip{\onelineskip}
+\setaftersecskip{2\onelineskip}
+
+
+>>>>>>> parent of 891a273 (versione possibilmente finale del doc)
 
 \maketitle
 
+<<<<<<< HEAD
 \tableofcontents
+=======
+
+\setbeforesubsubsecskip{-1\onelineskip}
+\setaftersubsubsecskip{3\onelineskip}
+
+
+
+\pagenumbering{gobble}
+\begin{center}
+\vspace*{5.8cm}
+
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+
+\newlength{\backupparindent}
+\setlength{\backupparindent}{\parindent}
+\setlength{\parindent}{0mm}
+
+\begin{textblock}{155}(30,20)
+    \vspace*{1mm}
+    \huge
+    \textbf{Esperienza di Elettromagnetismo\\}
+    \LARGE
+    \vspace*{5mm}
+    \begin{flushleft}
+    {Verifica sperimentale della forza di Lorentz generata da una corrente I che attraversa un filo di lunghezza L immersa in un campo magnetico B con un angolo tra filo e campo uguale a $\theta$.}
+    \\
+    \end{flushleft}
+    \textbf{}
+    \par
+    \vspace*{15mm}
+    \Large
+    \begin{textblock}{155}(30,60)
+    \begin{flushleft}
+        \Large
+           
+            
+             \textbf{Componenti:} Vittorio Strano, Arianna Genuardi, Florinda Tesi, Antonio Riolo, Matteo Romano
+            
+            
+            
+
+
+    \end{flushleft}
+    \end{textblock}
+\end{textblock}
+
+
+
+
+\setlength{\parindent}{\backupparindent}
+\end{center}
+
+
+
+
+
+\tableofcontents*
+>>>>>>> parent of 891a273 (versione possibilmente finale del doc)
+
+
 
 \newpage
 \section{Introduzione}
@@ -42,7 +331,7 @@
 \input{Chapters/ProcedimentoIII.tex}
 
 \section{Risultati}
-\subsection{Risultati Parte I}\label{sec:risultati 1}
+\subsection{Risultati Parte I}
 \input{Chapters/RisultatiI.tex}
 
 \subsection{Risultati Parte II}
