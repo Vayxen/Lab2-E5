@@ -7,13 +7,13 @@
 
 \usepackage{a4wide}
 \usepackage{amsmath}
-\usepackage[greek, british]{babel}
 \usepackage{fancyhdr}
 \usepackage{gensymb}
 \usepackage{graphicx,wrapfig}
 \usepackage{grffile}
 \usepackage{pifont}
 \usepackage{float}
+\usepackage[italian]{babel}
 
 \usepackage{caption}
 \captionsetup{format=plain, labelfont=bf, skip=0pt}
@@ -45,8 +45,6 @@
 %\usepackage{titlesec}
 
 
-
-
 %\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 %\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 %\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
@@ -55,10 +53,6 @@
 \counterwithout{section}{chapter}
 
 \usepackage{tocloft}
-
-
-
-
 
 
 \usepackage{inputenc}
@@ -77,27 +71,7 @@
 %\renewcommand\cftsectionaftersnumb{\textbf}
 \renewcommand{\cftsectionfont}{\normalfont\bfseries}% titles in bold
 
-
-
-
-
-
-
 \usepackage{lipsum}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 \setlength\cftsectionindent{0pt}
@@ -107,12 +81,6 @@
 
 \renewcommand\cftbeforesectionskip{7pt plus 1pt}
 \renewcommand\cftbeforesubsectionskip{4pt plus 1pt}
-
-
-
-
-
-
 
 %\renewcommand\cftsecfont{\Large\bfseries}
 %\renewcommand\cftsubsecfont{\large\bfseries}
@@ -190,19 +158,9 @@
 
 \newcommand{\doctitle}{Laboratorio di Fisica - Esperienza di Elettromagnetismo}
 
-
-
-
-
-
-
-
-
-
-
-
-
 \begin{document}
+\counterwithout{figure}{chapter}
+\counterwithout{figure}{section}
 % SECTIONS
 \makeatletter
 \setsecheadstyle{\tikz{
@@ -255,10 +213,7 @@
     \textbf{Esperienza di Elettromagnetismo\\}
     \LARGE
     \vspace*{5mm}
-    \begin{flushleft}
-    {Verifica sperimentale della forza di Lorentz generata da una corrente I che attraversa un filo di lunghezza L immersa in un campo magnetico B con un angolo tra filo e campo uguale a $\theta$.}
-    \\
-    \end{flushleft}
+    Verifica sperimentale della forza di Lorentz.
     \textbf{}
     \par
     \vspace*{15mm}
@@ -273,24 +228,14 @@
             
             
 
-
     \end{flushleft}
     \end{textblock}
 \end{textblock}
 
-
-
-
 \setlength{\parindent}{\backupparindent}
 \end{center}
 
-
-
-
-
 \tableofcontents*
-
-
 
 \newpage
 \normalsize
@@ -312,7 +257,7 @@
 \input{Chapters/ProcedimentoIII.tex}
 \newpage
 \section{Risultati}
-\subsection{Risultati Parte I}
+\subsection{Risultati Parte I}\label{sec:risultati 1}
 \input{Chapters/RisultatiI.tex}
 
 \subsection{Risultati Parte II}
