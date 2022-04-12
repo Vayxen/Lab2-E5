@@ -12,43 +12,19 @@
 \usepackage{amsmath, amssymb, amsthm} % math
 \usepackage{siunitx} % SI unit
 \usepackage{tabularx, booktabs, multirow, longtable} % table enhance
-\usepackage{caption, subcaption, graphicx} % figure enhance
+\usepackage{caption, subcaption, graphicx, float} % figure enhance
+
+\title{\textbf{Esperienza di Elettromagnetismo}\vspace{.5em}\\ \large Verifica sperimentale della forza di Lorentz.}
+\author{\textbf{Componenti}\vspace{.5em}\\ \large Vittorio Strano, Arianna Genuardi, Florinda Tesi,\\ Antonio Riolo, Matteo Romano}
+\date{}
 
 \begin{document}
 
-\begin{textblock}{155}(30,20)
-    \vspace*{1mm}
-    \huge
-    \textbf{Esperienza di Elettromagnetismo\\}
-    \LARGE
-    \vspace*{5mm}
-    Verifica sperimentale della forza di Lorentz.
-    \textbf{}
-    \par
-    \vspace*{15mm}
-    \Large
-    \begin{textblock}{155}(30,60)
-    \begin{flushleft}
-        \Large
-           
-            
-             \textbf{Componenti:} Vittorio Strano, Arianna Genuardi, Florinda Tesi, Antonio Riolo, Matteo Romano
-            
-            
-            
+\maketitle
 
-    \end{flushleft}
-    \end{textblock}
-\end{textblock}
-
-\setlength{\parindent}{\backupparindent}
-\end{center}
-
-\tableofcontents*
+\tableofcontents
 
 \newpage
-\normalsize
-\pagenumbering{arabic}
 \section{Introduzione}
 \input{Chapters/Introduzione.tex} 
 
@@ -64,7 +40,7 @@
 
 \subsection{Procedimento Parte III}
 \input{Chapters/ProcedimentoIII.tex}
-\newpage
+
 \section{Risultati}
 \subsection{Risultati Parte I}\label{sec:risultati 1}
 \input{Chapters/RisultatiI.tex}
@@ -74,7 +50,7 @@
 
 \subsection{Risultati Parte III}
 \input{Chapters/RisultatiIII.tex}
-\newpage
+
 \subsection{Risultati Lunghezza filo Parte III}
 \input{Chapters/RisultatiIIIL.tex}
 \section{Conclusioni}
