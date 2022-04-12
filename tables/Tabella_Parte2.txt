@@ -1,0 +1,7 @@
+	Lunghezza_Circuito(m)	Lunghezza_errore(m)	Differenz_Masse(g)	Dif_Masse_errore(g)
+0	0.011	0.001	0.24	0.02
+1	0.021	0.001	0.45	0.02
+2	0.031	0.001	0.63	0.02
+3	0.041	0.001	0.84	0.02
+4	0.062	0.002	1.26	0.02
+5	0.082	0.002	1.65	0.02
