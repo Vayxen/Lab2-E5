@@ -1,6 +1,6 @@
-	Massa_nominale(g)	Massa_Pesata(g)	Massa_Pesata_errore(g)
-0	0.0	0.00	0.01
-1	0.9974	1.00	0.01
-2	6.6942	6.69	0.01
-3	10.3577	10.36	0.01
-4	1.444	1.45	0.01
+Massa_nominale(g)	Massa_Pesata(g)	Massa_Pesata_errore(g)
+0.0	0.00	0.01
+0.9974	1.00	0.01
+6.6942	6.69	0.01
+10.3577	10.36	0.01
+1.444	1.45	0.01
